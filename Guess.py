@@ -1,4 +1,7 @@
-target = 34
+import random 
+
+target = random.randint(1,100)
+print("Number is between 1-100")
 guess = int(input("Guess the number: "))
 attempts = 1
 while(guess!=target): 
@@ -8,4 +11,4 @@ while(guess!=target):
     else:
         guess = int(input("Guess higher: "))
         attempts+=1
-print(f"Correct. Took {attempts} attempts. Skill issue\n")
+print(f"Correct. Took {attempts} attempts")
